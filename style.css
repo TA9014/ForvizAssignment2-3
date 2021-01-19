@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 28%;
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.heading {
+    color: rosybrown;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-text{
+    width: 80%;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rosybrown;
+    background-color: rgb(80, 80, 80);
+    border-radius: 15px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+.btn-check {
+    background-color: rosybrown;
+    font-size: 20px;
+    width: 50%;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+.right-container{
+    width: 72%;
+    background-color: rosybrown;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.check-status{
+    color: greenyellow;
+    margin-top: 15px;
+}
+
+.upcoming-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.card-container{
+    width: 92%;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: flex-start;
+    background-color: rgb(50, 50, 50);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+.card-heading{
+    color: rosybrown;
+}
+
+.booking-detail{
+    color: rosybrown;
+}
+
+.title-h2{
+    color: rosybrown;
+    font-size: 20px;
+}
+
+.detail-p{
+    color: rosybrown;
+    font-size: 14px;
+}
+
+.event-container {
+    width: 32%;
+    min-height: 60px;
+    height: auto;
+    border: 2px solid rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.event-title {
+    text-align: center;
+}
+
+.event-card{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+
+}
+
+.title-h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.event-detail{
+    font-size: 12px;
+}
+
+.event-value-container {
+    padding-left: 5px;
+}

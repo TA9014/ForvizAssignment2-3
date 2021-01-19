@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="left-container">
+        <h1 class="heading">Venue Booking System</h1>
+        <select id="room-id" class="input-text" onchange="roomIdHandler()">
+            <option value="A101">A101</option>
+            <option value="A102">A102</option>
+            <option value="Auditorium">Auditorium</option>
+        </select>
+
+        <input id='start-time' type="datetime-local" class="input-text" onchange="startTimeHandler()">
+        <input id="end-time" type="datetime-local" class="input-text" onchange="endTimeHandler()">
+
+        <button onclick="checkAvailablity()" class="btn-check">Check</button>
+        <h2 id="check-status" class="check-status">Check Availablity</h2>
+
+        <div class="upcoming-container">
+            <h2 class="title-h2">Upcoming Event</h2>
+
+            <div class="card-container">
+                <div class="title-container">
+                    <h2 class="title-h2">Room:</h2>
+                    <p class="detail-p">Start:</p>
+                    <p class="detail-p">End:</p>
+                    <p class="detail-p">Title:</p>
+                </div>
+
+                <div class='detail-container'>
+                    <h2 id="roomId-a101-heading" class="title-h2">A101</h2>
+                    <p id="a101-start-time" class="detail-p">Start</p>
+                    <p id="a101-end-time" class="detail-p">End</p>
+                    <p id="a101-title" class="detail-p">Title</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="title-container">
+                    <h2 class="title-h2">Room:</h2>
+                    <p class="detail-p">Start:</p>
+                    <p class="detail-p">End:</p>
+                    <p class="detail-p">Title:</p>
+                </div>
+
+                <div class='detail-container'>
+                    <h2 id="roomId-a102-heading" class="title-h2">A102</h2>
+                    <p id="a102-start-time" class="detail-p">Start</p>
+                    <p id="a102-end-time" class="detail-p">End</p>
+                    <p id="a102-title" class="detail-p">Title</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="title-container">
+                    <h2 class="title-h2">Room:</h2>
+                    <p class="detail-p">Start:</p>
+                    <p class="detail-p">End:</p>
+                    <p class="detail-p">Title:</p>
+                </div>
+
+                <div class='detail-container'>
+                    <h2 id="roomId-auditorium-heading" class="title-h2">Auditorium</h2>
+                    <p id="auditorium-start-time" class="detail-p">Start</p>
+                    <p id="auditorium-end-time" class="detail-p">End</p>
+                    <p id="auditorium-title" class="detail-p">Title</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="event-container" >
+            <h2 class="event-title">Today Event</h2>
+            <div id="today-event">
+
+            </div>
+        </div>
+
+        <div class="event-container">
+            <h2 class="event-title">This Week Event</h2>
+            <div id="this-week-event"></div>
+        </div>
+
+        <div class="event-container">
+            <h2 class="event-title">Next Week Event</h2>
+            <div id="next-week-event"></div>
+        </div>
+    </div>
+    <script src='./index.js'></script>
+
+</body>
+
+</html>
