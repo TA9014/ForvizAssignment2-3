@@ -10,18 +10,20 @@
 
 <body>
     <div class="left-container">
-        <h1 class="heading">Venue Booking System</h1>
-        <select id="room-id" class="input-text" onchange="roomIdHandler()">
-            <option value="A101">A101</option>
-            <option value="A102">A102</option>
-            <option value="Auditorium">Auditorium</option>
-        </select>
-
-        <input id='start-time' type="datetime-local" class="input-text" onchange="startTimeHandler()">
-        <input id="end-time" type="datetime-local" class="input-text" onchange="endTimeHandler()">
-
-        <button onclick="checkAvailablity()" class="btn-check">Check</button>
-        <h2 id="check-status" class="check-status">Check Availablity</h2>
+        <div class="check-container">
+            <h1 class="heading">Venue Booking System</h1>
+            <select id="room-id" class="input-text" onchange="roomIdHandler()">
+                <option value="A101">A101</option>
+                <option value="A102">A102</option>
+                <option value="Auditorium">Auditorium</option>
+            </select>
+            
+            <input id='start-time' type="datetime-local" class="input-text" onchange="startTimeHandler()">
+            <input id="end-time" type="datetime-local" class="input-text" onchange="endTimeHandler()">
+            
+            <button onclick="checkAvailablity()" class="btn-check">Check</button>
+            <h2 id="check-status" class="check-status">Check Availablity</h2>
+        </div>
 
         <div class="upcoming-container">
             <h2 class="title-h2">Upcoming Event</h2>
